@@ -10,6 +10,7 @@
 #define Define_h
 
 
+
 // 主页
 #define ROOTURL @"http://edu.cnshipping.com/zhy/app"
 
@@ -38,6 +39,19 @@
 #define CUSTOMBGCOR [UIColor colorWithRed:235.0/255 green:235.0/255 blue:235.0/255 alpha:1.0]
 
 
+// 枚举 与 struct
+typedef NS_ENUM(NSInteger, UITableViewSection) {
+    UITableViewSection0 = 0,          // regular table view
+    UITableViewSection1 = 1,       // preferences style table view
+    UITableViewSection2 = 2,
+    UITableViewSection3 = 3,
+    UITableViewSection4 = 4,
+    UITableViewSection5 = 5,
+    UITableViewSection6 = 6,
+    UITableViewSection7 = 7,
+    UITableViewSection8 = 8,
+};
+
 
 
 
@@ -48,6 +62,8 @@
 #else
 #define NSLog(...) nil
 #endif
+
+
 
 // 单例模式----
 #define singletonInterface(className)      + (instancetype)shared##className;
@@ -77,3 +93,6 @@ return _instance; \
 
 
 #endif
+
+
+

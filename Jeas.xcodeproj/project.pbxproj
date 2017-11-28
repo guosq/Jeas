@@ -26,6 +26,7 @@
 		FE8329C01E7924F20048646D /* SectionCController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8329BF1E7924F20048646D /* SectionCController.m */; };
 		FE91DB8B1E779E3000B6D5F7 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE91DB8A1E779E3000B6D5F7 /* LoginController.m */; };
 		FE91DB8F1E77B61D00B6D5F7 /* DCBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE91DB8E1E77B61D00B6D5F7 /* DCBaseController.m */; };
+		FEA9F0AF1FCD2B520022E604 /* SXSetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA9F0AE1FCD2B520022E604 /* SXSetManager.m */; };
 		FEABB9511E8147C800E498EE /* MessageDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEABB9501E8147C800E498EE /* MessageDetailController.m */; };
 		FECE098A1FCC0FE100AE3E34 /* SXAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = FECE09891FCC0FE100AE3E34 /* SXAlertView.m */; };
 		FEF7E12C1FC7F0E500A7F57C /* DownCenterController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF7E12B1FC7F0E500A7F57C /* DownCenterController.m */; };
@@ -98,6 +99,8 @@
 		FE91DB8A1E779E3000B6D5F7 /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
 		FE91DB8D1E77B61D00B6D5F7 /* DCBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCBaseController.h; sourceTree = "<group>"; };
 		FE91DB8E1E77B61D00B6D5F7 /* DCBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCBaseController.m; sourceTree = "<group>"; };
+		FEA9F0AD1FCD2B520022E604 /* SXSetManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXSetManager.h; sourceTree = "<group>"; };
+		FEA9F0AE1FCD2B520022E604 /* SXSetManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXSetManager.m; sourceTree = "<group>"; };
 		FEABB94F1E8147C800E498EE /* MessageDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageDetailController.h; sourceTree = "<group>"; };
 		FEABB9501E8147C800E498EE /* MessageDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageDetailController.m; sourceTree = "<group>"; };
 		FECE09881FCC0FE100AE3E34 /* SXAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXAlertView.h; sourceTree = "<group>"; };
@@ -191,6 +194,8 @@
 		FE5AD6B01FBD6BD200AE3B54 /* com.dev.function */ = {
 			isa = PBXGroup;
 			children = (
+				FEA9F0AD1FCD2B520022E604 /* SXSetManager.h */,
+				FEA9F0AE1FCD2B520022E604 /* SXSetManager.m */,
 				FE5AD6B11FBD6BD200AE3B54 /* AccountManager.h */,
 				FE5AD6B21FBD6BD200AE3B54 /* AccountManager.m */,
 				FE5AD6B31FBD6BD200AE3B54 /* NetRequstUrl.h */,
@@ -587,6 +592,7 @@
 				FE5AD6C21FBD6D5A00AE3B54 /* AppDelegate.m in Sources */,
 				FE5AD6AA1FBD67F400AE3B54 /* DCTools.m in Sources */,
 				FE91DB8B1E779E3000B6D5F7 /* LoginController.m in Sources */,
+				FEA9F0AF1FCD2B520022E604 /* SXSetManager.m in Sources */,
 				FE91DB8F1E77B61D00B6D5F7 /* DCBaseController.m in Sources */,
 				FEABB9511E8147C800E498EE /* MessageDetailController.m in Sources */,
 				FE5AD6BB1FBD6BD200AE3B54 /* OnlineStudyCallBack.m in Sources */,

@@ -9,6 +9,9 @@
 #import "SectionCController.h"
 #import "SectionCModel.h"
 
+#import "MessageDetailController.h"
+#import "DownCenterController.h"
+
 @interface SectionCController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong) NSMutableArray *maData;
 @property(nonatomic,strong) UITableView *mvTableView;
@@ -27,9 +30,12 @@
         SectionCModel *model21 = [SectionCModel modelWith:@"培训" msIconName:@"ic_ques_pre"];
         SectionCModel *model22 = [SectionCModel modelWith:@"考试" msIconName:@"ic_ques_pre"];
         SectionCModel *model23 = [SectionCModel modelWith:@"调查" msIconName:@"ic_ques_pre"];
+        SectionCModel *model24 = [SectionCModel modelWith:@"小视频" msIconName:@"ic_ques_pre"];
+        SectionCModel *model25 = [SectionCModel modelWith:@"聊天" msIconName:@"ic_ques_pre"];
         
-        SectionCModel *model30 = [SectionCModel modelWith:@"设置" msIconName:@"ic_ques_pre"];
-        SectionCModel *model31 = [SectionCModel modelWith:@"关于" msIconName:@"ic_ques_pre"];
+        SectionCModel *model30 = [SectionCModel modelWith:@"下载" msIconName:@"ic_ques_pre"];
+        SectionCModel *model31 = [SectionCModel modelWith:@"设置" msIconName:@"ic_ques_pre"];
+        SectionCModel *model32 = [SectionCModel modelWith:@"关于" msIconName:@"ic_ques_pre"];
         
         NSMutableArray *arr1 = [[NSMutableArray alloc] initWithCapacity:0];
         NSMutableArray *arr2 = [[NSMutableArray alloc] initWithCapacity:0];
@@ -41,9 +47,12 @@
         [arr2 addObject:model21];
         [arr2 addObject:model22];
         [arr2 addObject:model23];
+        [arr2 addObject:model24];
+        [arr2 addObject:model25];
         
         [arr3 addObject:model30];
         [arr3 addObject:model31];
+        [arr3 addObject:model32];
         
         [_maData addObject:arr1];
         [_maData addObject:arr2];
@@ -87,10 +96,12 @@
 }
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
+
 }
 
 - (void)viewDidLoad {
@@ -114,7 +125,9 @@
 - (void)send {
     
     SXAlertView *alert = [[SXAlertView alloc] init];
-    [alert fucpShows];
+    alert.mbIsFull = YES;
+    alert.mbIsResponed = YES;
+    [alert sxpShows];
 }
 - (void)setupSubviewsUI{
     [super setupSubviewsUI];
@@ -171,6 +184,56 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    switch (indexPath.section) {
+        case UITableViewSection0:
+        {
+            
+        }
+            break;
+        case UITableViewSection1:
+        {
+            switch (indexPath.row) {
+                
+                case UITableViewSection5:
+                {
+        
+                    MessageDetailController *chatController = [[MessageDetailController alloc] initWithConversationChatter:@"8001" conversationType:EMConversationTypeChat];
+                    [self.navigationController pushViewController:chatController animated:YES];
+                    
+                }
+                    break;
+                case UITableViewSection6:
+                {
+                    
+                }
+                    break;
+                    
+                default:
+                    break;
+            }
+            
+        }
+            break;
+        case UITableViewSection2:
+        {
+            switch (indexPath.row) {
+                case UITableViewSection0:
+                {
+                    DownCenterController *center = [DownCenterController new];
+                    [self.navigationController pushViewController:center animated:YES];
+                    
+                }
+                    break;
+                    
+                default:
+                    break;
+            }
+        }
+            break;
+        default:
+            break;
+    }
     
 }
 

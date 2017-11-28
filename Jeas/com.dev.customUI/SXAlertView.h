@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface SXAlertView : UIView
 
+@property(nonatomic,assign) BOOL mbIsFull;
+@property(nonatomic,assign) BOOL mbIsResponed;
 
-- (void)fucpShows;
+
+- (void)sxpShows;
 
 @end

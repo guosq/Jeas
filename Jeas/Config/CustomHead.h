@@ -9,9 +9,13 @@
 #ifndef CustomHead_h
 #define CustomHead_h
 
+#import "SXSetManager.h"
+
 #import "AppDelegate.h"
 #import "RTLabel.h"
 #import "SXAlertView.h"
+
+
 
 
 

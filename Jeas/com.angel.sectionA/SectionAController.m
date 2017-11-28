@@ -9,10 +9,10 @@
 #import "SectionAController.h"
 #import "VerticallyAlignedLabel.h"
 
-#import "MessageDetailController.h"
 
 
-#import "DownCenterController.h"
+
+
 @interface SectionAController ()
 {
 
@@ -22,12 +22,24 @@
 
 @implementation SectionAController
 
+- (BOOL)prefersStatusBarHidden {
+    
+    return NO;
+}
+
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    
+    AppDelegate *delegate = [AppDelegate shareInstance];
+    delegate.mpSetManager.mbIsRotation = YES;
+    
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
+    
+    AppDelegate *delegate = [AppDelegate shareInstance];
+    delegate.mpSetManager.mbIsRotation = NO;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -63,19 +75,15 @@
     
 }
 
-
-// 初始化数据加载
 - (void)defaultDataLoading{
     [super defaultDataLoading];
 }
 
-// 设置导航栏 appearance
 - (void)setupNavigationBarAppearance{
     [super setupNavigationBarAppearance];
     self.navigationItem.title = @"学习";
 }
 
-// 设置子控价UI
 - (void)setupSubviewsUI{
     [super setupSubviewsUI];
     self.view.backgroundColor = [UIColor whiteColor];
@@ -85,16 +93,7 @@
 
 #pragma mark --- action
 - (void)assetDownlosadcfas{
-    
-    DownCenterController *center = [DownCenterController new];
-    [self.navigationController pushViewController:center animated:YES];
-    return;
-    
 
-    MessageDetailController *chatController = [[MessageDetailController alloc] initWithConversationChatter:@"8001" conversationType:EMConversationTypeChat];
-    
-    [self.navigationController pushViewController:chatController animated:YES];
-    
 }
 
 @end

@@ -27,8 +27,17 @@ static AppDelegate *appDelegate = nil;
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+ 
     
+
+    /* 在这里进行状态栏的设置 当然也可以写在单例方法中去设置 */
+    [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationNone];
+    
+    /* 数据的初始化加载 */
+    _mpSetManager = [SXSetManager sharedInstance];
+    
+    
+    /* 初始化 UI */
     _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     UINavigationController*ugc = nil;
     LoginController *loadVC = [[LoginController alloc] init];
@@ -49,6 +58,8 @@ static AppDelegate *appDelegate = nil;
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    
+
 }
 
 
@@ -64,6 +75,21 @@ static AppDelegate *appDelegate = nil;
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+
+/**
+ * 关于屏幕 旋转
+   设置 屏幕允许旋转方向
+ **/
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {
+    
+    if (self.mpSetManager.mbIsRotation) {
+    
+        return UIInterfaceOrientationMaskAll;
+    }
+
+    return UIInterfaceOrientationMaskPortrait;
 }
 
 
