@@ -80,6 +80,7 @@
     tabBarController.view.frame = self.view.bounds;
     [self.view addSubview:tabBarController.view];
     
+    [tabBarController setSelectedIndex:2];
     
 }
 

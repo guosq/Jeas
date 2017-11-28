@@ -27,6 +27,8 @@
 		FE91DB8B1E779E3000B6D5F7 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE91DB8A1E779E3000B6D5F7 /* LoginController.m */; };
 		FE91DB8F1E77B61D00B6D5F7 /* DCBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE91DB8E1E77B61D00B6D5F7 /* DCBaseController.m */; };
 		FEA9F0AF1FCD2B520022E604 /* SXSetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA9F0AE1FCD2B520022E604 /* SXSetManager.m */; };
+		FEA9F0B31FCD44780022E604 /* ExamCenterController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA9F0B21FCD44780022E604 /* ExamCenterController.m */; };
+		FEA9F0B61FCD66640022E604 /* SXSigieView.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA9F0B51FCD66640022E604 /* SXSigieView.m */; };
 		FEABB9511E8147C800E498EE /* MessageDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEABB9501E8147C800E498EE /* MessageDetailController.m */; };
 		FECE098A1FCC0FE100AE3E34 /* SXAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = FECE09891FCC0FE100AE3E34 /* SXAlertView.m */; };
 		FEF7E12C1FC7F0E500A7F57C /* DownCenterController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF7E12B1FC7F0E500A7F57C /* DownCenterController.m */; };
@@ -101,6 +103,10 @@
 		FE91DB8E1E77B61D00B6D5F7 /* DCBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCBaseController.m; sourceTree = "<group>"; };
 		FEA9F0AD1FCD2B520022E604 /* SXSetManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXSetManager.h; sourceTree = "<group>"; };
 		FEA9F0AE1FCD2B520022E604 /* SXSetManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXSetManager.m; sourceTree = "<group>"; };
+		FEA9F0B11FCD44780022E604 /* ExamCenterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExamCenterController.h; sourceTree = "<group>"; };
+		FEA9F0B21FCD44780022E604 /* ExamCenterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExamCenterController.m; sourceTree = "<group>"; };
+		FEA9F0B41FCD66640022E604 /* SXSigieView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXSigieView.h; sourceTree = "<group>"; };
+		FEA9F0B51FCD66640022E604 /* SXSigieView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXSigieView.m; sourceTree = "<group>"; };
 		FEABB94F1E8147C800E498EE /* MessageDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageDetailController.h; sourceTree = "<group>"; };
 		FEABB9501E8147C800E498EE /* MessageDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageDetailController.m; sourceTree = "<group>"; };
 		FECE09881FCC0FE100AE3E34 /* SXAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXAlertView.h; sourceTree = "<group>"; };
@@ -290,6 +296,17 @@
 			path = com.angel.main;
 			sourceTree = "<group>";
 		};
+		FEA9F0B01FCD43EF0022E604 /* com.angel.exam */ = {
+			isa = PBXGroup;
+			children = (
+				FEA9F0B11FCD44780022E604 /* ExamCenterController.h */,
+				FEA9F0B21FCD44780022E604 /* ExamCenterController.m */,
+				FEA9F0B41FCD66640022E604 /* SXSigieView.h */,
+				FEA9F0B51FCD66640022E604 /* SXSigieView.m */,
+			);
+			path = com.angel.exam;
+			sourceTree = "<group>";
+		};
 		FEAFAF6C1FBD71B5000C45B3 /* com.dev.resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -344,6 +361,7 @@
 		FEFE26891E767ED20090211E /* Jeas */ = {
 			isa = PBXGroup;
 			children = (
+				FEA9F0B01FCD43EF0022E604 /* com.angel.exam */,
 				FEF7E1261FC7EFA900A7F57C /* com.angel.downloder */,
 				FEAFAF6C1FBD71B5000C45B3 /* com.dev.resources */,
 				FEAFAF6D1FBD71B5000C45B3 /* com.dev.catagory */,
@@ -605,7 +623,9 @@
 				FECE098A1FCC0FE100AE3E34 /* SXAlertView.m in Sources */,
 				FE5AD6B91FBD6BD200AE3B54 /* AccountManager.m in Sources */,
 				FEF7E1391FC7F52F00A7F57C /* UIColor+Hex.m in Sources */,
+				FEA9F0B61FCD66640022E604 /* SXSigieView.m in Sources */,
 				FE5AD6AC1FBD67F400AE3B54 /* Tools.m in Sources */,
+				FEA9F0B31FCD44780022E604 /* ExamCenterController.m in Sources */,
 				FEF7E13C1FC7FB0F00A7F57C /* SectionCModel.m in Sources */,
 				FE5AD6CA1FBD6D9100AE3B54 /* VerticallyAlignedLabel.m in Sources */,
 				FE5AD6AB1FBD67F400AE3B54 /* RunTime.m in Sources */,

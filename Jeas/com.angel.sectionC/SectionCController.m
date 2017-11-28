@@ -8,7 +8,7 @@
 
 #import "SectionCController.h"
 #import "SectionCModel.h"
-
+#import "ExamCenterController.h"
 #import "MessageDetailController.h"
 #import "DownCenterController.h"
 
@@ -195,6 +195,14 @@
         {
             switch (indexPath.row) {
                 
+                case UITableViewSection2:
+                {
+                    ExamCenterController *exam = [[ExamCenterController alloc] init];
+                    [self.navigationController pushViewController:exam animated:YES];
+                }
+                    break;
+                    
+                    
                 case UITableViewSection5:
                 {
         

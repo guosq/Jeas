@@ -21,6 +21,10 @@
         self.backgroundColor = [UIColor colorWithWhite:0.1 alpha:0.1];
         _mbIsFull = YES;
         _mbIsResponed = YES;
+        
+                UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapOnself)];
+                tap.numberOfTapsRequired = 1;
+                [self addGestureRecognizer:tap];
     }
     return self;
 }
@@ -31,11 +35,22 @@
  1.添加手势
  2.监听触摸方法
  **/
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    
-    //        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(sxDismiss)];
-    //        tap.numberOfTapsRequired = 1;
-    //        [self addGestureRecognizer:tap];
+//- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+//
+//    //        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(sxDismiss)];
+//    //        tap.numberOfTapsRequired = 1;
+//    //        [self addGestureRecognizer:tap];
+//
+//    if(_mbIsResponed){
+//
+//        [self sxDismiss];
+//    }else{
+//
+//    }
+//}
+
+// 手势
+- (void)tapOnself{
     
     if(_mbIsResponed){
         
@@ -87,7 +102,7 @@
     view.layer.cornerRadius = 30;
     view.layer.masksToBounds = YES;
     view.backgroundColor = [UIColor colorWithHexString:@"#ff33ff"];
-    view.alpha = 0.5;
+    view.alpha = 1;
     view.frame = CGRectMake(0, 600, 200, 200);
     [self addSubview:view];
     
