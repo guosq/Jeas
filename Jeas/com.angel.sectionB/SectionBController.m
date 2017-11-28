@@ -7,12 +7,12 @@
 //
 
 #import "SectionBController.h"
-
+#import "SBMainTableViewController.h"
 @interface SectionBController ()
 {
-
     UICollectionView *_collectionV;
 }
+@property (strong, nonatomic) SBMainTableViewController *sbTableviewC;
 @end
 
 @implementation SectionBController
@@ -29,6 +29,8 @@
     // Do any additional setup after loading the view.
     
     // gsq commit
+    [self addChildViewController:self.sbTableviewC];
+    [self.view addSubview:self.sbTableviewC.tableView];
 }
 
 // 初始化数据加载
@@ -48,5 +50,12 @@
     //UICollectionViewFlowLayout *layout = [UICollectionViewFlowLayout alloc] ini
     
 }
-
+#pragma mark - Get
+- (SBMainTableViewController *)sbTableviewC
+{
+    if (!_sbTableviewC) {
+        _sbTableviewC = [[SBMainTableViewController alloc] initWithStyle:UITableViewStylePlain];
+    }
+    return _sbTableviewC;
+}
 @end

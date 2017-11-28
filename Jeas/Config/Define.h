@@ -44,6 +44,18 @@
 #define NSLog(...) nil
 #endif
 
+#if DEBUG
+#define GLog(fmt, ...) do { \
+NSString *file = [[NSString alloc] initWithFormat:@"%s", __FILE__]; \
+NSLog((@"%@(%d) " fmt), [file lastPathComponent], __LINE__, ##__VA_ARGS__); \
+} while(0)
+#define GTRACE() ZDLog(@"[%s][%d]", __func__, __LINE__)
+#else
+#define GLog(x, ...)
+#define GTRACE()
+#endif
+
+
 // 单例模式----
 #define singletonInterface(className)      + (instancetype)shared##className;
 
