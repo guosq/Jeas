@@ -20,9 +20,14 @@
 
 
 
+
 // 单例类相关
 #define DCUserDefault [NSUserDefaults standardUserDefaults]
 #define DCAppdelegate [AppDelegate getStances]
+
+
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
 
 // 常用api
 #define DCImageName(name) [UIImage imageNamed:name]// 图片

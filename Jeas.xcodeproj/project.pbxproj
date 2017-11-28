@@ -27,6 +27,7 @@
 		FE91DB8B1E779E3000B6D5F7 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE91DB8A1E779E3000B6D5F7 /* LoginController.m */; };
 		FE91DB8F1E77B61D00B6D5F7 /* DCBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE91DB8E1E77B61D00B6D5F7 /* DCBaseController.m */; };
 		FEABB9511E8147C800E498EE /* MessageDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEABB9501E8147C800E498EE /* MessageDetailController.m */; };
+		FECE098A1FCC0FE100AE3E34 /* SXAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = FECE09891FCC0FE100AE3E34 /* SXAlertView.m */; };
 		FEF7E12C1FC7F0E500A7F57C /* DownCenterController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF7E12B1FC7F0E500A7F57C /* DownCenterController.m */; };
 		FEF7E1321FC7F12C00A7F57C /* DownCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF7E1311FC7F12C00A7F57C /* DownCell.m */; };
 		FEF7E1351FC7F14300A7F57C /* DownModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF7E1341FC7F14300A7F57C /* DownModel.m */; };
@@ -99,6 +100,8 @@
 		FE91DB8E1E77B61D00B6D5F7 /* DCBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCBaseController.m; sourceTree = "<group>"; };
 		FEABB94F1E8147C800E498EE /* MessageDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageDetailController.h; sourceTree = "<group>"; };
 		FEABB9501E8147C800E498EE /* MessageDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageDetailController.m; sourceTree = "<group>"; };
+		FECE09881FCC0FE100AE3E34 /* SXAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXAlertView.h; sourceTree = "<group>"; };
+		FECE09891FCC0FE100AE3E34 /* SXAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXAlertView.m; sourceTree = "<group>"; };
 		FEF7E12A1FC7F0E500A7F57C /* DownCenterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownCenterController.h; sourceTree = "<group>"; };
 		FEF7E12B1FC7F0E500A7F57C /* DownCenterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownCenterController.m; sourceTree = "<group>"; };
 		FEF7E1301FC7F12C00A7F57C /* DownCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownCell.h; sourceTree = "<group>"; };
@@ -218,6 +221,8 @@
 				FE5AD6C61FBD6D9100AE3B54 /* RTLabel.m */,
 				FE5AD6C71FBD6D9100AE3B54 /* VerticallyAlignedLabel.h */,
 				FE5AD6C81FBD6D9100AE3B54 /* VerticallyAlignedLabel.m */,
+				FECE09881FCC0FE100AE3E34 /* SXAlertView.h */,
+				FECE09891FCC0FE100AE3E34 /* SXAlertView.m */,
 			);
 			path = com.dev.customUI;
 			sourceTree = "<group>";
@@ -591,6 +596,7 @@
 				FE5AD6BA1FBD6BD200AE3B54 /* NetRequstUrl.m in Sources */,
 				FEF7E1321FC7F12C00A7F57C /* DownCell.m in Sources */,
 				FE8329BA1E7924BC0048646D /* SectionAController.m in Sources */,
+				FECE098A1FCC0FE100AE3E34 /* SXAlertView.m in Sources */,
 				FE5AD6B91FBD6BD200AE3B54 /* AccountManager.m in Sources */,
 				FEF7E1391FC7F52F00A7F57C /* UIColor+Hex.m in Sources */,
 				FE5AD6AC1FBD67F400AE3B54 /* Tools.m in Sources */,

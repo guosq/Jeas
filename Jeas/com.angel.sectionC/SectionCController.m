@@ -113,7 +113,8 @@
 }
 - (void)send {
     
-    
+    SXAlertView *alert = [[SXAlertView alloc] init];
+    [alert fucpShows];
 }
 - (void)setupSubviewsUI{
     [super setupSubviewsUI];
